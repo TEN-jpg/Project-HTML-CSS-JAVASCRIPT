@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    height: 50px;
+    width: 200px;
+    margin: 50px;
+    background-color: aqua;
+}
+
+.button1 {
+    transition: transform 0.5s ease-out;
+}
+
+.button2 {
+    transition: transform 0.3s ease-in 0.2s;
+}
+
+.button3 {
+    transition: transform 0.5s ease-in-out;
+}
+.button1:hover {
+    transform: scale(1.2);
+}
+.button2:hover {
+    transform: rotate(5deg);
+}
+.button3:hover {
+    transform: translateY(10px);
+}
+
+
