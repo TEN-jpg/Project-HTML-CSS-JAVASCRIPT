@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading View Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="astro-wrapper">
+        <header>
+            <div class="navbar">
+                <div class="nav-logo">
+                    <a href="HomePage.html"></a>
+                    <div class="logo"></div>
+                </div>
+                <div class="nav-search-bar">
+                    <div class="icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input type="text" placeholder="Search Market">
+                </div>
+                <div class="nav-links">
+                    <div class="links border">
+                        <a href="market.html">Market</a>
+                    </div>
+                    <div class="links border">
+                        <a href="watchlist.html">Watchlist</a>
+                    </div>
+                    <div class="links border">
+                        <a href="community.html">Community</a>
+                    </div>
+                    <div class="links border">
+                        <a href="#about-us">About us</a>
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <div class="globe border right-links">
+                        <i class="fa-solid fa-globe"></i>
+                        <p>IN</p>
+                    </div>
+                    <div class="mode border right-links">
+                        <button id="mode">
+                            <i class="fa-solid fa-moon moon"></i>
+                            <i class="fa-solid fa-sun sun"></i>
+                        </button>
+                    </div>
+                    <div class="profile-picture border right-links">
+                        <div class="profile-img"></div>
+                    </div>
+                    <div class="text-container right-links text-hover">
+                        <p>Get Started</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <div class="hero-section">
+                <div class="hero-title">
+                    <p id="title">Look first / Then leap.</p>
+                    <p id="desc">The best trades require research, then commitment.</p>
+                </div>
+                <div class="hero-button">
+                    <button>Get Started for free</button>
+                </div>
+                <p id="discount">$0 forever, no credit card needed</p>
+            </div>
+        </main>
+    </div>
+    
+    <footer>
+        <div class="background-image">
+            <div class="footer-wrapper">
+                <div class="footer-links">
+                    <div class="footer-logo">
+                        <div class="logo-wrapper">
+                            <div class="logo2"></div>
+                        </div>
+                        <p id="footer-desc">Look first / Then leap.</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://x.com/tradingview/" class="border2 "><div class="X"></div></a>
+                        <a href="https://www.facebook.com/tradingview/" class="border2"><div class="facebook"></div></a>
+                        <a href="https://www.youtube.com/@TradingView" class="border2"><div class="youtube"></div></a>
+                        <a href="https://www.instagram.com/tradingview/" class="border2"><div class="insta"></div></a>
+                        <a href="https://www.linkedin.com/company/tradingview/" class="border2"><div class="linkedIn"></div></a>
+                    </div>
+                    <div class="language">
+                        <div class="icon2">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <select class="lang border2">
+                            <option value="ENG">English(India)</option>
+                            <option value="ENGUS">English(US)</option>
+                            <option value="ENGUK">English(UK)</option>
+                            <option value="GER">Deutsch</option>
+                            <option value="FRE">français</option>
+                            <option value="JAP">日本語</option>
+                            <option value="CHN">中国人</option>
+                            <option value="ITL">Italiano</option>
+                        </select>
+                    </div>
+                    <div class="copyright">
+                        <p>© 2026 TradingView, Inc.</p>
+                    </div>
+                </div>
+                <div class="foot-links" id="about-us">
+                    <div class="about">
+                        <h2>ABOUT COMPANY</h2>
+                        <p>Who we are</p>
+                        <p>Space mission</p>
+                        <p>Blog</p>
+                        <p>Careers</p>
+                        <p>Media Kit</p>
+                    </div>
+                    <div class="policy">
+                        <h2>POLICIES & SECURITY</h2>
+                        <p>Trems of Use</p>
+                        <p>Disclaimer</p>
+                        <p>Privacy Policy</p>
+                        <p>Cookies Policy</p>
+                        <p>Security tips</p>
+                        <p>Status Page</p>
+                    </div>
+                </div>
+                <div class="foot-links">
+                    <div class="tools">
+                        <h2>TOOLS & SUBSCRIPTIONS</h2>
+                        <p>Features</p>
+                        <p>Pricing</p>
+                        <p>Market data</p>
+                        <p>Gift plan</p>
+                    </div>
+                    <div class="growth">
+                        <h2>GROWTH OPPORTUNITIES</h2>
+                        <p>Advertising</p>
+                        <p>Brokerage integration</p>
+                        <p>Partner program</p>
+                        <p>Education program</p>
+                    </div>
+                </div>
+                <div class="foot-links">
+                    <div class="community">
+                        <h2>COMMUNITY</h2>
+                        <p>Social network</p>
+                        <p>Wall of Love</p>
+                        <p>Refer a friend</p>
+                        <p>House Rules</p>
+                        <p>Moderators</p>
+                    </div>
+                    <div class="ideas">
+                        <h2>IDEAS</h2>
+                        <p>Trading</p>
+                        <p>Education</p>
+                        <p>Editor's picks</p>
+                    </div>
+                </div>
+                <div class="foot-links">
+                    <div class="business">
+                        <h2>BUSINESS & SOLUTION</h2>
+                        <p>Widgets</p>
+                        <p>Charting libraries</p>
+                        <p>Lightweight Charts</p>
+                        <p>Advanced Charts</p>
+                        <p>Trading Platform</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

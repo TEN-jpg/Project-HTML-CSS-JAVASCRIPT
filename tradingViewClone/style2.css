@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* -------------------------------------------MARKET-VIEW---------------------------------------- */
+
+.navbar {
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Logo */
+
+.nav-logo {
+    display: flex;
+    margin-right: 10rem;
+    position: relative;
+}
+
+.nav-logo a {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.logo {
+    background-image: url('logo2.png');
+    background-size: cover;
+    height: 3rem;
+    width: 4rem;
+}
+
+/* Navigation links */
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    margin-left: 0.2rem;
+}
+
+.links a {
+    color: #0f0f0f;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: -apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif;
+    padding: 0.8rem;
+}
+
+.border:hover {
+    background-color: rgba(211, 211, 211, 0.45);
+    border-radius: 1.5rem;
+}
+
+/* Right side navbar */
+
+.nav-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-links {
+    display: flex;
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+.globe {
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+    cursor: pointer;
+}
+
+.globe i {
+    font-size: 1.5rem;
+}
+
+.globe p {
+    font-size: 1.2rem;
+    font-family: -apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+
+.profile-img {
+    background-image: url('profile2.png');
+    background-size: cover;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.text-container {
+    color: #fff;
+    cursor: pointer;
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.2rem;
+    border-bottom-left-radius: 0.6rem;
+    border-bottom-right-radius: 2.3rem;
+    padding: 0.8rem 1rem 0.8rem 1rem;
+    background: linear-gradient(75deg, #00bce6, #2962ff 50.31%, #d500f9);
+}
+
+.text-container p {
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif;
+}
+
+.text-hover:hover {
+    background: linear-gradient(75deg, #2962ff 50.31%, #d500f9);
+}
+
+.nav-search-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav-search-bar input {
+    color: black;
+    height: 3rem;
+    width: 13rem;
+    font-size: 1.15rem;
+    border-radius: 1.5rem;
+    padding-left: 2.5rem;
+    background-color: rgba(136, 135, 135, 0.447);
+    border: none;
+    outline: none;
+    font-family: -apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    padding-left: 0.3rem;
+    font-size: 1.6rem;
+    color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+}
+
+
+.nav-search-bar:hover .icon {
+    color: black
+}
+
+.nav-search-bar:hover input::placeholder {
+    color: black
+}
+
+
+.wrapper {
+    height: 85vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#market-head {
+    font-size: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif;
+    border-top: 2px solid rgba(211, 211, 211, 0.58);
+    padding: 0.8rem 1.7rem 0.8rem;
+}
+
+.major-index {
+    border: 1px solid lightgray;
+    border-radius: 1rem;
+    flex-direction: column;
+}
+
+.tradingview-widget-container {
+    border: 1px solid lightgray;
+    border-radius: 1rem;
+}
+
+#index {
+    padding: 0.7rem 0.9rem 0.7rem;
+    font-size: 1.3rem;
+    font-family: -apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif;
+}
+
+.major-index .tradingview-widget-container {
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    border-radius: 0;
+}
+
+.major-index .tradingview-widget-container:hover {
+    background-color: rgba(211, 211, 211, 0.281);
+}
+
+#last-index {
+    border: none;
+}
+
+.news .tradingview-widget-container {
+    margin: 1.3rem;
+}
+
+
