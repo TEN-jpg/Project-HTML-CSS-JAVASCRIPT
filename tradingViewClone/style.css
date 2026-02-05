@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------------------------------------HOME-PAGE----------------------------------------------- */
+
+.astro-wrapper {
+    height: 100vh;
+    background-image: url('hero.webp');
+    background-size: cover;
+}
+
+.navbar {
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Logo */
+
+.nav-logo {
+    display: flex;
+    margin-right: 10rem;
+    position: relative;
+}
+
+.nav-logo a {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.logo {
+    background-image: url('logo.png');
+    background-size: cover;
+    height: 3rem;
+    width: 4rem;
+}
+
+/* Navigation links */
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    margin-left: 0.2rem;
+}
+
+.links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: -apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif;
+    padding: 0.8rem;
+}
+
+.border:hover {
+    background-color: rgba(211, 211, 211, 0.42);
+    border-radius: 1.5rem;
+}
+
+/* Right side navbar */
+
+.nav-right {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-links {
+    display: flex;
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+.globe {
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+    cursor: pointer;
+}
+
+.globe i {
+    font-size: 1.5rem;
+}
+
+.globe p {
+    font-size: 1.2rem;
+    font-family: -apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+
+.profile-img {
+    background-image: url('profile.png');
+    background-size: cover;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.mode button {
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.text-container {
+    cursor: pointer;
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.2rem;
+    border-bottom-left-radius: 0.6rem;
+    border-bottom-right-radius: 2.3rem;
+    padding: 0.8rem 1rem 0.8rem 1rem;
+    background: linear-gradient(75deg, #00bce6, #2962ff 50.31%, #d500f9);
+}
+
+.text-container p {
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif;
+}
+
+.text-hover:hover {
+    background: linear-gradient(75deg, #2962ff 50.31%, #d500f9);
+}
+
+.nav-search-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav-search-bar input {
+    color: black;
+    height: 3rem;
+    width: 13rem;
+    font-size: 1.15rem;
+    border-radius: 1.5rem;
+    padding-left: 2.5rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    font-family: -apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    padding-left: 0.3rem;
+    font-size: 1.6rem;
+    color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+}
+
+.nav-search-bar:hover .icon, .nav-search-bar:focus-within i {
+    color: black
+}
+
+.nav-search-bar:hover input::placeholder, .nav-search-bar:focus-within input::placeholder {
+    color: black
+}
+
+/* Hero Section */
+
+.hero-section {
+    color: #ffffff;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    flex-direction: column;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif;
+    gap: 2rem;
+}
+
+#title {
+    font-size: 6.5rem;
+    font-weight: 700;
+}
+
+#desc {
+    font-size: 1.5rem;
+}
+
+.hero-button {
+    display: block;
+}
+
+.hero-button button {
+    background-color: #fffffff5;
+    padding: 2rem 3rem 2rem 3rem;
+    border-top-left-radius: 1.3rem;
+    border-bottom-left-radius: 1.3rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 6rem;
+    font-family: -apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 700;
+    border: none;
+    outline: none;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#discount {
+    font-size: 1.2rem;
+    color: rgba(211, 211, 211, 0.854);
+}
+
+.background-image {
+    background-image: url('footer.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 65vw;
+}
+
+/* footer */
+
+.footer-wrapper {
+    display: flex;
+    border-top: 1px solid lightgray;
+    margin-top: 3rem;
+    padding: 2rem 1.5rem 2rem 1.5rem;
+    gap: 5rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.logo2 {
+    background-image: url('tradingviewLight.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 4vh;
+    width: 15vw;
+}
+
+#footer-desc {
+    font-size: 0.95rem;
+    font-family: -apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif;
+    padding-left: 0.7rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.social-links a {
+    padding: 0.3rem;
+}
+
+.social-links div{
+    height: 2rem;
+    width: 2rem;
+    background-size: cover;
+}
+
+.X { background-image: url('X.png'); }
+.facebook { background-image: url('facebook.png'); }
+.youtube { background-image: url('youtube.png'); }
+.insta { background-image: url('insta.png'); }
+.linkedIn { background-image: url('linkedIN.png'); }
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.lang {
+    height: 4rem;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    padding-left: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif;
+}
+
+.icon2 {
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.copyright {
+    color: #707070;
+    font-size: 0.9rem;
+    font-family: -apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif;
+}
+
+.border2:hover {
+    background-color: rgba(211, 211, 211, 0.42);
+    border-radius: 0.5rem;
+}
+
+.foot-links {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 0.5rem 0 0.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif;
+}
+
+.foot-links h2 {
+    color: #707070;
+    font-size: 0.75rem;
+    margin-bottom: 0.2rem;
+    padding: 0.2rem 0.7rem 0.13rem;
+}
+
+.about p, .ideas p, .business p, .growth p, .community p, .tools p, .policy p{
+    font-size: 0.94rem;
+    padding: 0.2rem 0.7rem 0.13rem;
+}
+
+.about p:hover, .ideas p:hover, .business p:hover, .growth p:hover, .community p:hover, .tools p:hover, .policy p:hover {
+    background-color: rgba(211, 211, 211, 0.288);
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.dark {
+    background-color: black;
+}
+
+.mode .sun {
+    display: none;
+}
+
+body.dark .mode .moon {
+    display: none;
+}
+
+body.dark .mode .sun {
+    display: block;
+}
+
+body.dark .hero-button button{
+    color: #ffff;
+    background-color: #181a1b;
+}
+
+body.dark .logo {
+    background-image: url('logo2.png');
+}
+
+body.dark .logo2 {
+    background-image: url('tradingviewDark.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 4.9vh;
+    width: 15vw;
+}
+
+body.dark .footer-wrapper p {
+    color: #fff;
+}
+
+body.dark .insta { background-image: url('instaDark.png'); }
+body.dark .facebook { background-image: url('facebookDark.png'); }
+body.dark .linkedIn { background-image: url('linkedInDark.png'); }
+body.dark .youtube { background-image: url('youtubeDark.png'); }
+body.dark .X { background-image: url('xDark.png');}
+
+body.dark .lang {
+    color: #fff;
+    background-color: black;
+}
+
+body.dark .language i{
+    color: #fff;
+}
+
+body.dark .background-image {
+    background-image: url('footerDark.jpg');
+}
